@@ -26,7 +26,8 @@ app.use(cookieParser());
 app.use("/api/users", userRoutes);
 app.use("/api/contacts", contactRoutes);
 app.get("/", (_req, res) => {
-  res.send("API is running...");
+  res.send("API is running..." + process.env.FRONTEND_URL);
+  console.log(process.env.FRONTEND_URL);
 });
 //global error handler
 app.use(
