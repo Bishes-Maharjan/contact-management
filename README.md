@@ -1,4 +1,4 @@
-# Project Name
+# Contact Management
 
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-Express-green)
