@@ -130,9 +130,3 @@ npm run dev
 
 The frontend will run at `http://localhost:5173` and communicate with the backend API at `http://localhost:3000/api`.
 
----
-
-## License
-
-This project is licensed under the MIT License.  
-![License](https://img.shields.io/badge/license-MIT-yellow)
