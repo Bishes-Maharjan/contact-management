@@ -1,28 +1,138 @@
-# React Project - Project for Certification
+# Project Name
 
-## Description
+![Frontend](https://img.shields.io/badge/frontend-React-blue)
+![Backend](https://img.shields.io/badge/backend-Express-green)
+![MongoDB](https://img.shields.io/badge/database-MongoDB-brightgreen)
+![TypeScript](https://img.shields.io/badge/language-TypeScript-blue)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 
-This project is a simple React application that displays a list of contacts. It allows users to view, add, edit, and delete contacts.
+A full-stack web application built with **TypeScript**, **React (Vite)** for the frontend, and **Express.js** with **MongoDB** for the backend.
 
-## Installation
+---
 
-To install the project, follow these steps:
+## Table of Contents
 
-1. Clone the repository: `git clone https://github.com/Bishes-Maharjan/contact-management.git`
-2. Navigate to the project directory: `cd contact-management`
-3. Navigate to /frontend and /backend and run : `npm install`
+- [Technologies](#technologies)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Environment Variables](#environment-variables)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
+- [License](#license)
 
-## Usage
+---
 
-To run the project, use the following command:
+## Technologies
 
-`npm run dev`
+- **Frontend:** React, Vite, TypeScript
+- **Backend:** Express.js, TypeScript, MongoDB, Mongoose
+- **Authentication:** JWT
 
-on both directory: /frontend and /backend
+---
 
 ## Features
 
-- View a list of contacts
-- Add new contacts
-- Edit existing contacts
-- Delete contacts
+- CRUD operations with MongoDB
+- JWT-based authentication
+- RESTful API
+- Responsive UI with React and Vite
+
+---
+
+## Project Structure
+
+### Backend
+
+```
+backend/
+├─ src/
+│  ├─ controllers/
+│  ├─ models/
+│  ├─ routes/
+│  ├─ middlewares/
+│  └─ app.ts
+├─ package.json
+└─ tsconfig.json
+```
+
+### Frontend
+
+```
+frontend/
+├─ src/
+│  ├─ components/
+│  ├─ pages/
+│  ├─ hooks/
+│  ├─ services/
+│  └─ main.tsx
+├─ package.json
+└─ tsconfig.json
+```
+
+---
+
+## Environment Variables
+
+### Backend (`.env`)
+
+```env
+PORT=3000
+MONGO_URI="mongodb://localhost:27017/contactdb"
+JWT_SECRET="uihfuihfugebrhjdbvcuy4r7873y490eyq374ytre9q82i3ulwefbqoewfvsERF{Q#oiwerf98gq2k3wrdiub,aeuykgrfd}"
+FRONTEND_URL="http://localhost:5173"
+```
+
+### Frontend (`.env`)
+
+```env
+VITE_API_URL="http://localhost:3000/api"
+```
+
+---
+
+## Installation
+
+### Backend
+
+```bash
+cd backend
+npm install
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+```
+
+---
+
+## Running the Project
+
+### MongoDB
+
+Ensure MongoDB is running locally and update the `MONGO_URI` in the `.env` file or use MongoDB Atlas.
+
+### Backend
+
+```bash
+cd backend
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm run dev
+```
+
+The frontend will run at `http://localhost:5173` and communicate with the backend API at `http://localhost:3000/api`.
+
+---
+
+## License
+
+This project is licensed under the MIT License.  
+![License](https://img.shields.io/badge/license-MIT-yellow)

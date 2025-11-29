@@ -59,3 +59,5 @@ export interface ContactFormData {
   notes?: string;
   favorite?: boolean;
 }
+
+
