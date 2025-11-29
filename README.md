@@ -4,7 +4,6 @@
 ![Backend](https://img.shields.io/badge/backend-Express-green)
 ![MongoDB](https://img.shields.io/badge/database-MongoDB-brightgreen)
 ![TypeScript](https://img.shields.io/badge/language-TypeScript-blue)
-![License](https://img.shields.io/badge/license-MIT-yellow)
 
 A full-stack web application built with **TypeScript**, **React (Vite)** for the frontend, and **Express.js** with **MongoDB** for the backend.
 
@@ -78,7 +77,7 @@ frontend/
 ```env
 PORT=3000
 MONGO_URI="mongodb://localhost:27017/contactdb"
-JWT_SECRET="uihfuihfugebrhjdbvcuy4r7873y490eyq374ytre9q82i3ulwefbqoewfvsERF{Q#oiwerf98gq2k3wrdiub,aeuykgrfd}"
+JWT_SECRET="{your jwt secret it can be any combination of letters u want}"
 FRONTEND_URL="http://localhost:5173"
 ```
 
@@ -129,4 +128,3 @@ npm run dev
 ```
 
 The frontend will run at `http://localhost:5173` and communicate with the backend API at `http://localhost:3000/api`.
-
